@@ -1,62 +1,86 @@
-main{
+.card {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-}
-
-.card{
-    display: flex;
-    flex-direction: column;
-    border: 2px solid black;
     max-width: 100%;
     margin: 10px;
     padding: 10px;
     border-radius: 10px;
+    font-size: 1.2rem;
 
-     img
-        {
-            width: 100%;
-            height: auto;
-            display: block;
-            border-radius: 10px;
-        }
-    
-    div.left-img-cont{
+    img {
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 10px;
+    }
+
+    div.left-img-cont {
         flex-grow: 1;
         max-width: 100%;
     }
 
-    div.right-info-cont{
+    div.right-info-cont {
         flex-grow: 4;
     }
+
+    /* Global Styles */
+    ul {
+        list-style-type: none;
+        /* Remove default bullet points */
+        padding: 0;
+        /* Remove default padding */
+    }
+
+    /* Specific Styling for Bullet Points with 3rem size */
+    ul.custom-bullet {
+        padding-left: 20px;
+        /* Add some left padding to create space for custom bullets */
+    }
+
+    ul.custom-bullet li {
+        position: relative;
+        padding-left: 25px;
+        /* Space between the custom bullet and the text */
+        margin-bottom: 40px;
+        /* Adjust the margin between list items */
+    }
+
+    ul.custom-bullet li::before {
+        content: "\2022";
+        /* Unicode character for a bullet point (•) */
+        position: absolute;
+        left: 0;
+        color: #5E35B1;
+        /* Change the color of the bullet point */
+        font-size: 3rem;
+        /* Set the size of the bullet point to 3rem */
+        line-height: 0.5;
+        /* Adjust the line height for vertical alignment */
+    }
+
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-    .card{
+    .card {
 
         flex-direction: row;
-        // border: 2px solid black;
         max-width: 100%;
         margin: 10px;
         padding: 10px;
         border-radius: 10px;
-    
-         img
-            {
-                width: 100%;
-                height: auto;
-                display: block;
-                border-radius: 10px;
-            }
-        
-        div.left-img-cont{
-            flex-grow: 1;
-            max-width: 12.5rem;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+        img {
+            height: auto;
+            display: block;
+            border-radius: 10px;
         }
-    
-        div.right-info-cont{
-            flex-grow: 4;
+
+        div.left-img-cont {
+            max-width: 35rem;
         }
+
+
     }
 }
