@@ -1,1 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+    font-family: 'ABeeZee',Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media only screen and (min-width: 992px) {
+    .container{
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
