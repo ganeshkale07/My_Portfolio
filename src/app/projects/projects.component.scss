@@ -40,9 +40,8 @@
     ul.custom-bullet li {
         position: relative;
         padding-left: 25px;
-        /* Space between the custom bullet and the text */
         margin-bottom: 40px;
-        /* Adjust the margin between list items */
+        line-height: 1.7rem;
     }
 
     ul.custom-bullet li::before {
@@ -50,7 +49,7 @@
         /* Unicode character for a bullet point (•) */
         position: absolute;
         left: 0;
-        color: #5E35B1;
+        color: #7E57C2;
         /* Change the color of the bullet point */
         font-size: 3rem;
         /* Set the size of the bullet point to 3rem */

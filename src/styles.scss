@@ -1,10 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
 body {
-    font-family: 'ABeeZee', Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 16px;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    margin: 0;
 }
 
 @media only screen and (min-width: 992px) {
@@ -19,11 +20,41 @@ body {
     height: 100%;
 }
 
-body {
-    margin: 0;
-    font-family: Roboto, "Helvetica Neue", sans-serif;
+.text-color-400 {
+    color: #7E57C2;
 }
 
-.text-color {
+.text-color-500 {
+    color: #673AB7;
+}
+
+.text-color-600 {
     color: #5E35B1;
+}
+
+.text-color-700 {
+    color: #512DA8;
+}
+
+.text-color-800 {
+    color: #4527A0;
+}
+
+.text-color-900 {
+    color: #311B92;
+}
+
+.text-color-300 {
+    color: #9575CD;
+}
+
+.section-header-cont {
+    display: flex;
+    justify-content: center;
+}
+
+.section-header {
+    border-bottom: 2px solid #D1C4E9;
+    padding-top: 2rem;
+    font-weight: 500;
 }
