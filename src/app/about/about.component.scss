@@ -1,0 +1,78 @@
+section {
+    // background-image: linear-gradient(to right top, #9575cd, #ac91d8, #c2ade2, #d7caec, #ede7f6);
+    background-size: 100% 100%;
+    height: 35rem;
+}
+
+section.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    div {
+        //border: 2px solid red;
+        width: 100%;
+        height: 100%;
+    }
+
+    .hero-info {
+        margin: 5rem 1.7rem 0rem;
+    }
+}
+
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    min-height: 5rem;
+    justify-content: space-around;
+    font-weight: 600;
+}
+
+ul.custom-bullet {
+    padding-left: 20px;
+    list-style-type: none;
+    padding: 0;
+}
+
+ul.custom-bullet li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 40px;
+    line-height: 1.3rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+ul.custom-bullet li::before {
+    content: "\2022";
+    /* Unicode character for a bullet point (•) */
+    position: absolute;
+    left: 0;
+    color: #7E57C2;
+    /* Change the color of the bullet point */
+    font-size: 3rem;
+    /* Set the size of the bullet point to 3rem */
+    line-height: 0.5;
+    /* Adjust the line height for vertical alignment */
+}
+
+.social-media {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    section.container {
+        flex-direction: column;
+        padding: 0.5rem 0;
+        flex-wrap: wrap;
+    }
+
+    ul.custom-bullet {
+        padding-right: 1.5rem;
+    }
+}

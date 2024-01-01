@@ -1,4 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+html,
+body {
+    height: 100%;
+}
+
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 16px;
@@ -15,12 +20,11 @@ body {
     }
 }
 
-html,
-body {
-    height: 100%;
+.text-color-timeline {
+    color: #9575CD;
 }
 
-.text-color-400 {
+.text-highlight-sub-point {
     color: #7E57C2;
 }
 
@@ -44,9 +48,6 @@ body {
     color: #311B92;
 }
 
-.text-color-300 {
-    color: #9575CD;
-}
 
 .section-header-cont {
     display: flex;
@@ -57,4 +58,11 @@ body {
     border-bottom: 2px solid #D1C4E9;
     padding-top: 2rem;
     font-weight: 500;
+}
+
+.social-media {
+
+    a img {
+        max-width: 2rem;
+    }
 }

@@ -1,13 +1,15 @@
 <nav class="container">
-  <ul>
-    <li><a href="default.asp" >Logo</a></li>
-    <li><a href="default.asp">About</a></li>
-    <li><a href="news.asp">Experience</a></li>
-    <li><a href="contact.asp">Projects</a></li>
-    <li><a href="about.asp">Skill</a></li>
+  <p class="logo" [routerLink]="'about'" [fragment]="'about-section'">Ganesh.&lcub;Dev&rcub; </p>
+  <ul [ngStyle]="{'display' : isMobileView ? 'block' :'none' }">
+    <li><a [routerLink]="'about'" [fragment]="'about-section'">About</a></li>
+    <li><a [routerLink]="'experience'" [fragment]="'experience-section'">Experience</a></li>
+    <li><a [routerLink]="'projects'" [fragment]="'projects-section'">Projects</a></li>
+    <li><a [routerLink]="'skills'" [fragment]="'skills-section'" >Skills</a></li>
   </ul>
+  <span class="hamburger-icon" (click)="hambugerMenuClick()">&#9776;</span>
 </nav>
-<header class="container"></header>
+<app-about></app-about>
 <app-experience></app-experience>
 <app-projects></app-projects>
 <app-skills></app-skills>
+<app-footer></app-footer>
