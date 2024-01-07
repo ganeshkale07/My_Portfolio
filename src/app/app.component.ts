@@ -1,19 +1,28 @@
-import { Component,Inject, OnInit } from '@angular/core';
-import { DOCUMENT } from '@angular/common';
+import { Component,HostListener} from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent implements OnInit{
+export class AppComponent{
   title = 'portfolio';
-  isMobileView : boolean = true;
-  constructor(@Inject(DOCUMENT) private document: Document){
+  isMobileView : boolean = false;
 
+  @HostListener('window:resize', ['$event'])
+  onResize(event: Event): void {
+    //alert(event.currentTarget.innerWidth)
+    console.log(window.innerWidth)
+    if(window.innerWidth > 786){
+      this.isMobileView = false;
+    }
   }
-  ngOnInit(){
+
+  constructor(){
   }
+
+
+
 
   hambugerMenuClick(){
     this.isMobileView = !this.isMobileView;
