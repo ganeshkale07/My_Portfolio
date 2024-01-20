@@ -5,6 +5,7 @@
    flex-direction: row;
    justify-content: flex-start;
    background-color: cream;
+   width: 50%;
  }
 
  .v-stepper {
@@ -23,25 +24,21 @@
    display: inline-block;
  }
 
- .step .line {
-   top: 23px;
-   left: 12px;
-   /*   height: 120px; */
-   height: 100%;
-
-   position: absolute;
-   border-left: 3px solid gray;
+ .section-content{
+  display: flex;
+  flex-direction: column;
  }
+
 
  .step.completed .circle {
    visibility: visible;
    background-color: #7E57C2;
    border-color: #7E57C2;
  }
-
- .step.completed .line {
-   border-left: 3px solid #7E57C2;
+ .step.completed.two{
+  align-self: flex-end;
  }
+
 
  .step.active .circle {
    visibility: visible;
@@ -52,27 +49,13 @@
    visibility: hidden;
  }
 
- .step.empty .line {
-   /*     visibility: hidden; */
-   /*   height: 150%; */
-   top: 0;
-   height: 150%;
- }
-
-
- .step:last-child .line {
-   border-left: 3px solid white;
-   z-index: -1;
-   /* behind the circle to completely hide */
- }
-
  .card {
    width: 100%;
    margin-left: 20px;
    display: inline-block;
    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-   padding: 10px;
-   border-bottom: 3px solid #7E57C2;
+   padding: 15px;
+   border-left: 3px solid #7E57C2;
    position: relative;
 
    .duration {
