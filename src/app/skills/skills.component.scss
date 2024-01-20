@@ -6,11 +6,26 @@
     width: 50%;
     margin: 0 auto;
 
+    p {
+        transform: translateY(45%);
+        transition: transform 1s;
+    }
+
+    .animate-card {
+        transform: translateY(0);
+    }
+
     p img {
         max-width: 4rem;
         max-height: 4rem;
         border-radius: 15px;
         box-shadow: -2px -2px 3px 0 rgba(0, 0, 0, 0.2), 2px 2px 3px 0 rgba(0, 0, 0, 0.2);
         padding: 2rem;
+    }
+
+    @media (prefers-reduced-motion) {
+        p {
+            transition: none;
+        }
     }
 }

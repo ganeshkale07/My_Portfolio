@@ -2,12 +2,10 @@
   <div class="section-header-cont"> 
     <h2 class="text-color-900 section-header">Experience </h2>
   </div>
-    <div class="section-content" #experience-section>
+    <div class="section-content" appIntersectionObservableDirective (intersected)="handleIntersection($event)">
       <!-- completed -->
-      <div class="step active">
-        <div class="v-stepper">
-          <div class="circle"></div>
-        </div>
+      <div class="step active" #exp_section>
+    
   
         <div class="card">
           <b class="designation text-highlight-sub-point">BNSF ENTERPRISE GIS - Front-end developer</b>
@@ -21,10 +19,8 @@
       </div>
     
     <!-- active -->
-    <div class="step completed two">
-      <div class="v-stepper">
-        <div class="circle"></div>
-      </div>
+    <div class="step completed two" #exp_section>
+      
 
       <div class="card">
         
@@ -40,10 +36,8 @@
     </div>
     
       <!-- empty -->
-      <div class="step completed">
-        <div class="v-stepper">
-          <div class="circle"></div>
-        </div>
+      <div class="step completed" #exp_section>
+ 
   
         <div class="card">
           <b class="designation text-highlight-sub-point">Amgen - Front-end developer</b>

@@ -13,6 +13,7 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { MatButtonModule } from '@angular/material/button';
 import { MatStepperModule } from '@angular/material/stepper';
 import { ExperienceComponent } from './experience/experience.component';
+import { IntersectionObservableDirectiveDirective } from './intersection-observable-directive.directive';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { ExperienceComponent } from './experience/experience.component';
     ContactComponent,
     SkillsComponent,
     FooterComponent,
-    ExperienceComponent
+    ExperienceComponent,
+    IntersectionObservableDirectiveDirective
   ],
   imports: [
     BrowserModule,
